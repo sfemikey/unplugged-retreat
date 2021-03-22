@@ -309,7 +309,7 @@ address {
 }
 
 /*****Contact Section on About Page*****/
-.contact-section {
+.content-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -317,22 +317,27 @@ address {
     margin-bottom: 2.5rem;
 }
 
-.contact-section h2 {
+.content-wrapper h2 {
     width: 85%;
     font-size: 1.875rem;
     margin: 50px 30px 10px 20px;
+    line-height:normal;
 }
 
-.contact-section h3 {
+.contact-content h3 {
     margin-left:1.25rem;
 }
 
-.contact-section address p {
+.contact-content address p {
     margin-left:1.25rem;
 }
 
-.about-footer-content address {
+.contact-content address {
     text-align: left;
+}
+
+.contact-content p {
+    margin-left:1.25rem;
 }
 
 /*****FAQ PAGE*****/
@@ -357,7 +362,7 @@ address {
 
 .faq-content {
     width: 83%;
-    padding: 0 35px 45px 40px;
+    margin: 0 50px 0 20px;
 }
 
 /* ==========================================================================
@@ -452,31 +457,38 @@ address {
   /*Tablet Styles Here*/
   header {
     justify-content: center;
-    padding: 20px 0px 20px 0px;
+    padding: 33px 0;
   }
 
   header .content-wrapper {
-    display: flex;
+    width:100%;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap:wrap;
+
+  }
+
+  .content-wrapper a {
+      width: 45%;
   }
 
   .content-wrapper a img {
     margin-left: auto;
-    width: 40%;
+    width: 60%;
     flex-flow: row;
-    padding-left:60px;
+    padding-left: 3.75rem;
+  }
+
+  header nav {
+    width: 50%;
   }
 
   header nav ul {
-    margin: -4em 0 1em;
-    text-align: center;
-    display: flex;
     justify-content: space-between;
-    margin-left: 30em;
-    width: 30%;
   }
+
+  .header-divider {
+      display:none;
+  }
+
 
 /*****Hero Area*****/
   .hero-area .content-wrapper {
@@ -492,13 +504,56 @@ address {
     width: 85%;
   }
 
+  .content-wrapper h1 {
+    font-size: 2.25em;
+    line-height: normal;
+    width: 80%;
+    margin: 1.25rem;
+    padding-bottom: 50%;
+  }
+
+  .form-description {
+    width:35%;
+    margin-right:10%;
+  }
+
+  .form-description h3 {
+      font-size: 1.5rem;
+  }
+
+  .form-description p {
+      font-size: 0.875rem;
+  }
+
+  .form {
+    width: 50%;
+  }
+
+  .form h3 {
+      font-size: 1.5rem;
+  }
+
+
 /*****FEATURES ARTICLE*****/
   .features article {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    flex-basis: 30%;
+    flex-basis: 40%;
+  }
+
+  .features .content-wrapper h2 {
+    padding-left: 3.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .features-feature-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
   }
 
 
@@ -506,7 +561,7 @@ address {
 
   .reviews article {
     justify-content: flex-start;
-    width: 80%;
+    width: 100%;
     display: flex;
   }
 
@@ -518,20 +573,24 @@ address {
       width: 45%;
   }
 
+  .reviews .mission {
+     width: 50%;
+     margin:0;
+  }
+
   .reviews
   .content-wrapper h2 {
       width: 60%;
-      margin-left: 60px;
   }
 
   .reviews .content-wrapper p {
     text-align: left;
-    width: 45%;
-    margin-left: 40px;
+    width: 100%;
+    margin: 10px 60px 0 10px;
   }
 
   .reviews .content-wrapper h3 {
-      width: 60%;
+      width: 90%;
   }
 
   .reviews .content-wrapper {
@@ -540,46 +599,87 @@ address {
   }
 
   .reviews .content-wrapper img {
-    width: 50%;
-    padding-top: 20px;
-    margin-left: 40px;
+    width: 40%;
+    height:250px;
   }
 
 /*****FOOTER*****/
-  footer .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
+  .footer-content {
+    width: 65%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
   }
 
   footer .content-wrapper {
-    width: 60%;
+    width: 100%;
     margin: 100px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .contact h4 {
+    font-size: 1.5rem;
+    margin: 1.875rem;
+  }
+
+  .social h4 {
+    font-size:1.5rem;
+    margin: 1.875rem;
+  }
+
+  .contact p {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+
+  .social-icons {
+    height:1rem;
+  }
+
+  .social-icons a {
+      width: 3.75rem;
   }
 
 /****ABOUT PAGE*****/
-.mission-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  flex-wrap: wrap;
+  .mission-content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top:1.25rem;
+  }
+
+  .content-wrapper h2 {
+    width: 65%;
+    font-size: 2.25rem;
+    margin-left: 3.75rem;
+    line-height: normal;
+    margin-bottom: 0;
   }
 
   .mission-content p {
-      width:40%;
+    width:45%;
   }
 
   .contact-section .content-wrapper h2 {
-      width:
+    width: 60%;
+    font-size: 2.25rem;
   }
 
   .contact-content {
-      display:
-      justify-content:
-      align-items:
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 70px 90px 40px;
+    width:70%;
 }
+
+  .contact-content h3 {
+    margin:1rem;
+  }
 
 /*****FAQ PAGE*****/
   .faq .content-wrapper {
@@ -587,13 +687,14 @@ address {
   }
 
   .faq-content {
-      flex-basis: 40%;
-      margin:auto;
+    flex-basis: 40%;
+    margin: auto;
+    margin-top: 1rem;
   }
 
-  .faq h2 {
+  .faq .content-wrapper h2 {
     width: 100%;
-    margin-left: 60px;
+    font-size: 2.25rem;
     }
 
 @media only screen and (min-width:1200px) {
