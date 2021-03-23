@@ -483,6 +483,7 @@ address {
 
   header nav ul {
     justify-content: space-between;
+    padding-left: 15%;
   }
 
   .header-divider {
@@ -605,16 +606,16 @@ address {
 
 /*****FOOTER*****/
   .footer-content {
-    width: 65%;
-    justify-content: space-around;
+    width: 60%;
+    justify-content: space-between;
     display: flex;
     align-items: center;
+    margin:100px 0;
   }
 
   footer .content-wrapper {
     width: 100%;
-    margin: 100px 0;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     display: flex;
   }
@@ -682,13 +683,8 @@ address {
   }
 
 /*****FAQ PAGE*****/
-  .faq .content-wrapper {
-      justify-content: space-between;
-  }
-
   .faq-content {
-    flex-basis: 40%;
-    margin: auto;
+    flex-basis: 35%;
     margin-top: 1rem;
   }
 
@@ -696,10 +692,231 @@ address {
     width: 100%;
     font-size: 2.25rem;
     }
+}
 
 @media only screen and (min-width:1200px) {
   /*Desktop Styles Here*/
-}
+  .content-wrapper a {
+    width: 50%;
+  }
+
+  .content-wrapper a img {
+    width: 50%;
+    flex-flow: row;
+    padding-left: 3.75rem;
+    margin-left: 10%;
+  }
+
+  header nav {
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+    margin: 30px 100px;
+    padding-left: 30%;
+  }
+
+  header nav ul li {
+    font-size: 1.125rem;
+  }
+
+  .content-wrapper h1 {
+    font-size: 3.75rem;
+    line-height: normal;
+    width: 60%;
+    margin: 5%;
+    padding-bottom: 50%;
+  }
+
+/****ASIDE AREA HERE*****/
+  aside .content-wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 80%;
+  }
+
+  .form-description h3 {
+    font-size: 1.875rem;
+    line-height: normal;
+  }
+
+  .form-description p {
+    font-size: 1.125rem;
+  }
+
+  .form h3 {
+    font-size: 1.875rem;
+  }
+
+  input {
+    width: 90%;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+/*****FEATURES AREA HERE*****/
+  .features .content-wrapper h2 {
+    padding-left: 10%;
+    width: 60%;
+    font-size: 2.25rem;
+  }
+
+  .features-feature-items {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+    margin: auto;
+  }
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 30%;
+  }
+
+/*****REVIEWS AREA HERE*****/
+  .reviews .content-wrapper {
+    justify-content: space-around;
+    margin: 90px 120px 100px 120px;
+  }
+
+  .reviews .content-wrapper h2 {
+    width: 100%;
+    font-size: 2.25rem;
+    padding-bottom: 7%;
+  }
+
+  .reviews article {
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+  }
+
+  .reviews .content-wrapper img {
+    width: 40%;
+    height: 300px;
+  }
+
+  .reviews .content-wrapper h3 {
+    width: 60%;
+    font-size: 1.875rem;
+    line-height: normal;
+  }
+
+  .reviews .content-wrapper p {
+    text-align: left;
+    width: 70%;
+    font-size: 1.125rem;
+  }
+
+/*****CONTACT AREA HERE*****/
+  .contact h4 {
+    font-size: 1.875rem;
+  }
+
+  .contact p {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 1.125rem;
+  }
+
+  .social {
+    text-align: center;
+    width: 30%;
+  }
+
+  .social h4 {
+    font-size: 1.875rem;
+  }
+
+/*****FOOTER HERE*****/
+  .copyright p {
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+  }
+
+/*****ABOUT PAGE AREA HERE*****/
+  .content-wrapper h2 {
+  width: 65%;
+  font-size: 3rem;
+  margin-left: 10%;
+  line-height: normal;
+  }
+
+/*****Mission Content here*****/
+  .mission-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 5%;
+  }
+
+  .mission-content p {
+    width: 38%;
+    font-size: 1.125rem;
+  }
+
+/*****Contact Info here*****/
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+    font-size: 3rem;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    padding: 30px 0;
+  }
+
+  .contact-one {
+    width: 50%;
+    margin-left: 10%;
+  }
+
+  .contact-two {
+    padding-bottom: 3%;
+    width: 50%;
+  }
+
+  .contact-content h3 {
+    font-size: 1.875rem;
+  }
+
+  .contact-content address p {
+    margin-left: 1.25rem;
+    font-size: 1.125rem;
+  }
+
+/*****FAQ PAGE HERE*****/
+  .faq .content-wrapper h2 {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .faq-content {
+    flex-basis: 35%;
+    margin-top: 1rem;
+    margin-left: 10%;
+    width: 30%;
+  }
+
+  .faq-content h4,
+  .faq-content p {
+    font-size: 1.125rem;
+    width:90%;
+  }
 
 /* ==========================================================================
    Print styles.
