@@ -180,6 +180,7 @@ header nav ul {
 
 header nav ul li {
     list-style-type:none;
+    font-size: 1.125em;
 }
 
 header nav ul li a {
@@ -238,22 +239,34 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    padding: 1.25rem;
+    padding: 1.25em;
     background-color: #527158
 }
 
-input {
-    width: 90%;
-    text-align: left;
-    font-size: 1.125em;
-    padding: 15px 0;
+aside .form {
+  margin-top: 30px;
 }
 
-button, [type="button"], [type="reset"], [type="submit"] {
-    -webkit-appearance: button;
-    text-align: center;
-    color: #e2e3ed;
-    background-color: #2a423a;
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*****Features Area*****/
@@ -302,7 +315,8 @@ article i {
 .features-item-description {
     width: 50%;
     text-align: center;
-    padding: 1.25rem;
+    padding: 1.25em;
+    font-size: .875em;
 }
 
 /*****REVIEWS*****/
@@ -315,29 +329,32 @@ article i {
 }
 
 .reviews .content-wrapper h2 {
-    font-size: 1.875rem;
+    font-size: 1.875em;
     line-height: normal;
-    margin: 1.25rem;
-    width: 70%;
+    margin: 1.25em;
+    width: 80%;
 }
 
 .reviews article img {
     width: 90%;
-    margin: 1.25rem;
+    margin: 1.25em;
 }
 
 .reviews .mission {
     width: 85%;
-    margin: 1.25rem;
+    margin: 1.25em;
     justify-content: flex-start;
 }
 
 .mission h3 {
     margin: 0;
+    font-size: 1.125em;
+    width: 60%;
 }
 
 .mission p {
     margin: 20px 20px 40px 0px;
+    font-size: .875em;
 }
 
 /******FOOTER******/
@@ -358,7 +375,7 @@ footer .content-wrapper {
 
 .social-icons {
     width: 60%;
-    margin-bottom: 2.1875rem;
+    margin-bottom: 2.188em;
 }
 
 .contact h3 {
@@ -413,17 +430,17 @@ address {
 
 .content-wrapper h2 {
     width: 85%;
-    font-size: 1.875rem;
+    font-size: 1.875em;
     margin: 50px 30px 10px 20px;
     line-height:normal;
 }
 
 .contact-content h3 {
-    margin-left:1.25rem;
+    margin-left:1.25em;
 }
 
 .contact-content address p {
-    margin-left:1.25rem;
+    margin-left:1.25em;
 }
 
 .contact-content address {
@@ -431,7 +448,7 @@ address {
 }
 
 .contact-content p {
-    margin-left:1.25rem;
+    margin-left:1.25em;
 }
 
 /*****FAQ PAGE*****/
@@ -451,7 +468,7 @@ address {
 
 .faq .content-wrapper h2 {
     width: 80%;
-    font-size: 1.875rem;
+    font-size: 1.875em;
 }
 
 .faq-content {
@@ -568,7 +585,7 @@ address {
     margin-left: auto;
     width: 60%;
     flex-flow: row;
-    padding-left: 3.75rem;
+    padding-left: 3.75em;
   }
 
   header nav {
@@ -603,7 +620,7 @@ address {
     font-size: 2.25em;
     line-height: normal;
     width: 80%;
-    margin: 1.25rem;
+    margin: 1.25em;
     padding-bottom: 50%;
   }
 
@@ -613,11 +630,11 @@ address {
   }
 
   .form-description h3 {
-      font-size: 1.5rem;
+      font-size: 1.5em;
   }
 
   .form-description p {
-      font-size: 0.875rem;
+      font-size: 0.875em;
   }
 
   .form {
@@ -625,7 +642,7 @@ address {
   }
 
   .form h3 {
-      font-size: 1.5rem;
+      font-size: 1.5em;
   }
 
 
@@ -639,8 +656,8 @@ address {
   }
 
   .features .content-wrapper h2 {
-    padding-left: 3.25rem;
-    margin-bottom: 1rem;
+    padding-left: 3.25em;
+    margin-bottom: 1em;
   }
 
   .features-feature-items {
@@ -715,13 +732,13 @@ address {
   }
 
   .contact h4 {
-    font-size: 1.5rem;
-    margin: 1.875rem;
+    font-size: 1.5em;
+    margin: 1.875em;
   }
 
   .social h4 {
-    font-size:1.5rem;
-    margin: 1.875rem;
+    font-size:1.5em;
+    margin: 1.875em;
   }
 
   .contact p {
@@ -731,11 +748,11 @@ address {
   }
 
   .social-icons {
-    height:1rem;
+    height:1em;
   }
 
   .social-icons a {
-      width: 3.75rem;
+      width: 3.75em;
   }
 
 /****ABOUT PAGE*****/
@@ -744,13 +761,13 @@ address {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding-top:1.25rem;
+    padding-top:1.25em;
   }
 
   .content-wrapper h2 {
     width: 65%;
-    font-size: 2.25rem;
-    margin-left: 3.75rem;
+    font-size: 2.25em;
+    margin-left: 3.75em;
     line-height: normal;
     margin-bottom: 0;
   }
@@ -761,7 +778,7 @@ address {
 
   .contact-section .content-wrapper h2 {
     width: 60%;
-    font-size: 2.25rem;
+    font-size: 2.25em;
   }
 
   .contact-content {
@@ -773,18 +790,18 @@ address {
 }
 
   .contact-content h3 {
-    margin:1rem;
+    margin:1em;
   }
 
 /*****FAQ PAGE*****/
   .faq-content {
     flex-basis: 35%;
-    margin-top: 1rem;
+    margin-top: 1em;
   }
 
   .faq .content-wrapper h2 {
     width: 100%;
-    font-size: 2.25rem;
+    font-size: 2.25em;
     }
 }
 
@@ -797,7 +814,7 @@ address {
   .content-wrapper a img {
     width: 50%;
     flex-flow: row;
-    padding-left: 3.75rem;
+    padding-left: 3.75em;
     margin-left: 10%;
   }
 
@@ -813,11 +830,11 @@ address {
   }
 
   header nav ul li {
-    font-size: 1.125rem;
+    font-size: 1.125em;
   }
 
   .content-wrapper h1 {
-    font-size: 3.75rem;
+    font-size: 3.75em;
     line-height: normal;
     width: 60%;
     margin: 5%;
@@ -833,29 +850,29 @@ address {
   }
 
   .form-description h3 {
-    font-size: 1.875rem;
+    font-size: 1.875em;
     line-height: normal;
   }
 
   .form-description p {
-    font-size: 1.125rem;
+    font-size: 1.125em;
   }
 
   .form h3 {
-    font-size: 1.875rem;
+    font-size: 1.875em;
   }
 
   input {
     width: 90%;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 
 /*****FEATURES AREA HERE*****/
   .features .content-wrapper h2 {
     padding-left: 10%;
     width: 60%;
-    font-size: 2.25rem;
+    font-size: 2.25em;
   }
 
   .features-feature-items {
@@ -883,7 +900,7 @@ address {
 
   .reviews .content-wrapper h2 {
     width: 100%;
-    font-size: 2.25rem;
+    font-size: 2.25em;
     padding-bottom: 7%;
   }
 
@@ -900,26 +917,26 @@ address {
 
   .reviews .content-wrapper h3 {
     width: 60%;
-    font-size: 1.875rem;
+    font-size: 1.875em;
     line-height: normal;
   }
 
   .reviews .content-wrapper p {
     text-align: left;
     width: 70%;
-    font-size: 1.125rem;
+    font-size: 1.125em;
   }
 
 /*****CONTACT AREA HERE*****/
   .contact h4 {
-    font-size: 1.875rem;
+    font-size: 1.875em;
   }
 
   .contact p {
     text-align: center;
     width: 50%;
     margin: auto;
-    font-size: 1.125rem;
+    font-size: 1.125em;
   }
 
   .social {
@@ -928,7 +945,7 @@ address {
   }
 
   .social h4 {
-    font-size: 1.875rem;
+    font-size: 1.875em;
   }
 
 /*****FOOTER HERE*****/
@@ -936,13 +953,13 @@ address {
   margin: 1rem;
   justify-content: center;
   align-items: center;
-  font-size: 1.125rem;
+  font-size: 1.125em;
   }
 
 /*****ABOUT PAGE AREA HERE*****/
   .content-wrapper h2 {
   width: 65%;
-  font-size: 3rem;
+  font-size: 3em;
   margin-left: 10%;
   line-height: normal;
   }
@@ -957,13 +974,13 @@ address {
 
   .mission-content p {
     width: 38%;
-    font-size: 1.125rem;
+    font-size: 1.125em;
   }
 
 /*****Contact Info here*****/
   .contact-section .content-wrapper h2 {
     width: 80%;
-    font-size: 3rem;
+    font-size: 3em;
   }
 
   .contact-content {
@@ -985,30 +1002,30 @@ address {
   }
 
   .contact-content h3 {
-    font-size: 1.875rem;
+    font-size: 1.875em;
   }
 
   .contact-content address p {
-    margin-left: 1.25rem;
-    font-size: 1.125rem;
+    margin-left: 1.25em;
+    font-size: 1.125em;
   }
 
 /*****FAQ PAGE HERE*****/
   .faq .content-wrapper h2 {
     width: 100%;
-    font-size: 3rem;
+    font-size: 3em;
   }
 
   .faq-content {
     flex-basis: 35%;
-    margin-top: 1rem;
+    margin-top: 1em;
     margin-left: 10%;
     width: 30%;
   }
 
   .faq-content h4,
   .faq-content p {
-    font-size: 1.125rem;
+    font-size: 1.125em;
     width:90%;
   }
 
