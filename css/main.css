@@ -86,9 +86,75 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/******General Styles******/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height:100%;
+  text-align:left;
+  color: #e2e3ed;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding:0;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size:1.875em;
+  font-weight:500;
+  margin:0;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size:1.125em;
+  font-weight:400;
+  margin:20px 0;
+  color: #e2e3ed;
+}
+
+p {
+  font-size:.875em;
+  line-height:1.285em;
+  color: #e2e3ed;
+}
+
+img {
+  width:100%;
+  height:100%;
+
+}
+
+figure {
+  margin:0;
+}
+
+address {
+  font-style:normal;
+}
+
+.content-wrapper {
+  width:100%;
+}
+
+
 /****** base header - footer styles ******/
 header,
 footer {
+    background-color: #202322;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,12 +171,11 @@ header nav {
 }
 
 header nav ul {
-    width: 50%;
-    margin: 15px 90px 15px 90px;
-    justify-content: space-between;
-    text-transform: uppercase;
-    flex-flow: row;
-    display: flex;
+  width: 40%;
+  justify-content: space-between;
+  text-transform: uppercase;
+  flex-flow: row;
+  display: flex;
 }
 
 header nav ul li {
@@ -128,6 +193,8 @@ header .content-wrapper {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width:100%;
+    margin:0;
 }
 
 header .content-wrapper img {
@@ -147,6 +214,12 @@ main .hero-area {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/header-bg1.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
 }
 
 .content-wrapper h1 {
@@ -154,6 +227,9 @@ main .hero-area {
     line-height: normal;
     width: 80%;
     margin: 1.25rem;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 80%;
 }
 
 /*****This is where the Aside Area*****/
@@ -163,20 +239,37 @@ aside {
     align-items: center;
     flex-flow: row wrap;
     padding: 1.25rem;
+    background-color: #527158
 }
 
 input {
     width: 90%;
     text-align: left;
     font-size: 1.125em;
+    padding: 15px 0;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+    text-align: center;
+    color: #e2e3ed;
+    background-color: #2a423a;
 }
 
 /*****Features Area*****/
+.features {
+    background-image: url(../img/body-section-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .features .content-wrapper h2 {
-    font-size: 1.875rem;
-    width: 70%;
+    width: 85%;
     line-height: normal;
-    margin: 50px 30px 50px 20px;
+    margin: auto;
+    font-size: 1.875em;
+    margin-left: 8%;
+    padding: 50px 0 50px 0;
 }
 
 .feature-items {
@@ -199,6 +292,7 @@ article {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    padding: 30px 0 30px 0;
 }
 
 article i {
@@ -217,6 +311,7 @@ article i {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #2a423a;
 }
 
 .reviews .content-wrapper h2 {
@@ -314,7 +409,6 @@ address {
     justify-content: flex-start;
     align-items: flex-start;
     flex-flow: row wrap;
-    margin-bottom: 2.5rem;
 }
 
 .content-wrapper h2 {
