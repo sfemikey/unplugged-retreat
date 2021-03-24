@@ -198,11 +198,13 @@ header .content-wrapper {
     margin:0;
 }
 
-header .content-wrapper img {
+header figure {
     width: 60%;
-    font-size:2.25em;
-    text-align: center;
-    margin: 15px 70px 15px 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: .625em;
 }
 
 .header-divider {
@@ -240,7 +242,8 @@ aside {
     align-items: center;
     flex-flow: row wrap;
     padding: 1.25em;
-    background-color: #527158
+    background-color: #527158;
+    padding-bottom: 2.5em;
 }
 
 aside .form {
@@ -277,11 +280,9 @@ input[type=button] {
 }
 
 .features .content-wrapper h2 {
-    width: 85%;
-    line-height: normal;
+    width: 80%;
     margin: auto;
-    font-size: 1.875em;
-    margin-left: 8%;
+    font-size: 1.75em;
     padding: 50px 0 50px 0;
     line-height: 1.25em;
 }
@@ -296,9 +297,9 @@ input[type=button] {
     text-align: center;
 }
 
-.features-feature-item  {
-    width: 80%;
-    margin: 30px 0 45px 0;
+.features-feature-items  {
+    width: 100%;
+    padding: 60px 0 60px 0;
 }
 
 article {
@@ -581,9 +582,18 @@ address {
 
 @media only screen and (min-width:768px) {
   /*Tablet Styles Here*/
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    height: 100%;
+    text-align: left;
+    color: #e2e3ed;
+    width:100%;
+  }
+
   header {
-    justify-content: center;
-    padding: 33px 0;
+    justify-content: space-between;
+    padding: 20px 0 20px 60px;
   }
 
   header .content-wrapper {
@@ -592,16 +602,18 @@ address {
 
   }
 
-  .content-wrapper a {
-      width: 45%;
+  header .content-wrapper a {
+      width: 80%;
   }
 
-  .content-wrapper a img {
-    margin-left: auto;
-    width: 60%;
-    flex-flow: row;
-    padding-left: 3em;
-  }
+  header figure {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding:0;
+}
 
   header nav {
     width: 50%;
@@ -633,10 +645,14 @@ address {
 
   .content-wrapper h1 {
     font-size: 2.25em;
-    line-height: normal;
-    width: 80%;
-    margin: 1.25em;
+    line-height: 1em;
+    width: 90%;
+    margin: 90px 0 90px 40px;
     padding-bottom: 50%;
+  }
+
+  aside .form {
+    margin-top: 0;
   }
 
   .form-description {
@@ -671,8 +687,8 @@ address {
   }
 
   .features .content-wrapper h2 {
-    padding-left: 3.25em;
     margin-bottom: 1em;
+    width: 80%;
   }
 
   .features-feature-items {
@@ -707,7 +723,9 @@ address {
 
   .reviews
   .content-wrapper h2 {
-      width: 60%;
+      width: 80%;
+      font-size: 2.25em;
+      margin: 0;
   }
 
   .reviews .content-wrapper p {
@@ -717,7 +735,8 @@ address {
   }
 
   .reviews .content-wrapper h3 {
-      width: 90%;
+    width: 60%;
+    margin-left: .625em;
   }
 
   .reviews .content-wrapper {
@@ -725,9 +744,10 @@ address {
       margin: 90px 60px 90px 60px;
   }
 
-  .reviews .content-wrapper img {
-    width: 40%;
+  .reviews .content-wrapper figure {
+    margin:0;
     height:250px;
+    width:50%;
   }
 
 /*****FOOTER*****/
@@ -826,11 +846,17 @@ address {
     width: 50%;
   }
 
-  .content-wrapper a img {
-    width: 50%;
-    flex-flow: row;
-    padding-left: 3.75em;
-    margin-left: 10%;
+  header .content-wrapper a {
+      width: 80%;
+  }
+
+  header figure {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0;
   }
 
   header nav {
@@ -850,8 +876,8 @@ address {
 
   .content-wrapper h1 {
     font-size: 3.75em;
-    line-height: normal;
-    width: 60%;
+    line-height: 1.25em;
+    width: 100%;
     margin: 5%;
     padding-bottom: 50%;
   }
@@ -862,6 +888,11 @@ address {
     flex-flow: row;
     justify-content: space-around;
     width: 80%;
+    padding-bottom: 2.8125em;
+  }
+
+  aside .form {
+    margin-top: 0;
   }
 
   .form-description h3 {
@@ -885,8 +916,8 @@ address {
 
 /*****FEATURES AREA HERE*****/
   .features .content-wrapper h2 {
-    padding-left: 10%;
-    width: 60%;
+    padding-top: 8%;
+    width: 80%;
     font-size: 2.25em;
   }
 
@@ -897,6 +928,7 @@ address {
     align-items: center;
     flex-flow: wrap;
     margin: auto;
+    padding-bottom: 5.3125em;
   }
 
   .features article {
@@ -925,8 +957,8 @@ address {
     display: flex;
   }
 
-  .reviews .content-wrapper img {
-    width: 40%;
+  .reviews .content-wrapper figure {
+    width: 50%;
     height: 300px;
   }
 
@@ -938,7 +970,7 @@ address {
 
   .reviews .content-wrapper p {
     text-align: left;
-    width: 70%;
+    width: 80%;
     font-size: 1.125em;
   }
 
