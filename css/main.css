@@ -399,6 +399,13 @@ address {
 }
 
 /*****ABOUT PAGE*****/
+.mission .content-wrapper h2 {
+    width: 90%;
+    font-size: 1.875em;
+    margin: 50px 30px 10px 20px;
+    line-height: 1.25em;
+  }
+
 .mission {
     display:flex;
     justify-content: center;
@@ -412,16 +419,27 @@ address {
     margin: 40px 20px 40px 20px;
 }
 
-.mission-content h2 {
-    width: 83%;
-    font-size: 1.875em;
-    line-height: normal;
-}
 
 /*****Map Figure here*****/
 .map {
     width: 100%;
-    height:450px;
+    height: 450px;
+}
+
+.map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 125%;
+    overflow: hidden;
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /*****Contact Section on About Page*****/
@@ -437,11 +455,11 @@ address {
     padding-bottom: 3.125em;
 }
 
-.content-wrapper h2 {
-    width: 85%;
+.contact-section .content-wrapper h2 {
+    width: 90%;
     font-size: 1.875em;
-    margin: 50px 30px 10px 20px;
-    line-height:normal;
+    margin: 50px 20px 10px 20px;
+    line-height: 1.125em;
 }
 
 .contact {
@@ -458,10 +476,11 @@ address {
 
 .contact-content address {
     text-align: left;
+    padding-left: .50em;
 }
 
 .contact-content p {
-    margin-left:1.25em;
+    margin-left:1.75em;
 }
 
 /*****FAQ PAGE*****/
@@ -609,7 +628,7 @@ address {
   header figure {
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
     padding:0;
@@ -799,12 +818,11 @@ address {
     padding-top:1.25em;
   }
 
-  .content-wrapper h2 {
-    width: 65%;
-    font-size: 2.25em;
-    margin-left: 3.75em;
-    line-height: normal;
-    margin-bottom: 0;
+  .mission .content-wrapper h2 {
+    width: 70%;
+    font-size: 1.875em;
+    margin: 50px 30px 10px 60px;
+    line-height: 1.25em;
   }
 
   .mission-content p {
@@ -814,6 +832,7 @@ address {
   .contact-section .content-wrapper h2 {
     width: 60%;
     font-size: 2.25em;
+    margin-left: 1.5em;
   }
 
   .contact-content {
@@ -1004,11 +1023,11 @@ address {
   }
 
 /*****ABOUT PAGE AREA HERE*****/
-  .content-wrapper h2 {
-  width: 65%;
-  font-size: 3em;
-  margin-left: 10%;
-  line-height: normal;
+  .mission .content-wrapper h2 {
+    width: 75%;
+    font-size: 3em;
+    margin: 50px 30px 10px 115px;
+    line-height: 1.25em;
   }
 
 /*****Mission Content here*****/
@@ -1028,6 +1047,7 @@ address {
   .contact-section .content-wrapper h2 {
     width: 80%;
     font-size: 3em;
+    padding-left: 1em;
   }
 
   .contact-content {
@@ -1053,7 +1073,12 @@ address {
   }
 
   .contact-content address p {
-    margin-left: 1.25em;
+    margin-left: 2em;
+    font-size: 1.125em;
+  }
+
+  .contact-content p {
+    margin-left: 2.5em;
     font-size: 1.125em;
   }
 
