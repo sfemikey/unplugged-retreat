@@ -313,6 +313,7 @@ article {
 article .fontawesome-icon {
     width: 40%;
     margin:0;
+    text-align: center;
 }
 
 .features i {
@@ -367,24 +368,39 @@ article .fontawesome-icon {
 
 /******FOOTER******/
 
-footer {
+  footer {
     display:flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-footer .content-wrapper {
-    width:45%
-}
+  footer .content-wrapper {
+    width:60%
+  }
 
-.social {
+  .social {
     text-align:center;
-}
+  }
 
-.social-icons {
-    width: 60%;
-    margin-bottom: 2.188em;
-}
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer .social-icons p {
+    background-color: #527158;
+    width:2.5em;
+    height: 2.5em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+  }
+
+  footer .content-icons p i {
+    font-size:1.25em;
+  }
 
 .contact h3 {
     text-align: center;
@@ -810,7 +826,7 @@ address {
 
   .social h4 {
     font-size: 1.5em;
-    padding-top: .75em;
+    margin: 35px 0 50px 0;
   }
 
   .contact p {
@@ -825,6 +841,11 @@ address {
 
   .social-icons a {
       width: 3.75em;
+  }
+
+  .social {
+    text-align: center;
+    width: 30%;
   }
 
 /****ABOUT PAGE*****/
@@ -924,7 +945,7 @@ address {
   }
 
   .faq .content-wrapper h2 {
-    width: 100%;
+    width: 85%;
     font-size: 2.25em;
     }
 }
@@ -1094,6 +1115,14 @@ address {
 
   .social h4 {
     font-size: 1.875em;
+    padding: 25px 0 20px 0;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.125em;
   }
 
 /*****FOOTER HERE*****/
@@ -1194,7 +1223,7 @@ address {
 
 /*****FAQ PAGE HERE*****/
   .faq .content-wrapper h2 {
-    width: 100%;
+    width: 80%;
     font-size: 3em;
   }
 
