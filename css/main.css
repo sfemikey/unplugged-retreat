@@ -298,8 +298,8 @@ input[type=button] {
 }
 
 .features-feature-items  {
-    width: 100%;
-    padding: 60px 0 60px 0;
+  width: 50%;
+  margin: auto;
 }
 
 article {
@@ -307,17 +307,22 @@ article {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    padding-top: 1.875em;
+    padding: 30px 0 40px 0;
 }
 
-article i {
-    width: 25%;
+article .fontawesome-icon {
+    width: 40%;
+    margin:0;
+}
+
+.features i {
+	 font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features-item-description {
-    width: 50%;
+    width: 80%;
     text-align: center;
-    padding: 1.25em;
     font-size: .875em;
 }
 
@@ -707,7 +712,8 @@ address {
 
   .features .content-wrapper h2 {
     margin-bottom: 1em;
-    width: 80%;
+    width: 90%;
+    font-size: 2.25em;
   }
 
   .features-feature-items {
@@ -716,8 +722,19 @@ address {
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
+    padding-bottom: 12%;
   }
 
+  .features-item-description {
+    width: 60%;
+    text-align: center;
+    font-size: .875em;
+  }
+
+  .features i {
+    font-size: 5em;
+    margin-bottom: 40px;
+  }
 
   /*****REVIEWS*****/
 
@@ -1000,7 +1017,7 @@ address {
     align-items: center;
     flex-flow: wrap;
     margin: auto;
-    padding-bottom: 5.3125em;
+    padding-bottom: 3em;
   }
 
   .features article {
@@ -1009,6 +1026,17 @@ address {
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 30%;
+  }
+
+  .features-item-description {
+    width: 50%;
+    text-align: center;
+    font-size: .875em;
+  }
+
+  .features i {
+    font-size: 5em;
+    margin-bottom: 20px;
   }
 
 /*****REVIEWS AREA HERE*****/
