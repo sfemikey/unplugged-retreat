@@ -695,6 +695,28 @@ address {
     margin-top: 0;
   }
 
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 10px 0;
+  }
+
+  input[type=button] {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   .form-description {
     width:35%;
     margin-right:10%;
@@ -730,6 +752,7 @@ address {
     margin-bottom: 1em;
     width: 90%;
     font-size: 2.25em;
+    padding-left: 1em;
   }
 
   .features-feature-items {
@@ -859,8 +882,8 @@ address {
   }
 
   .mission .content-wrapper h2 {
-    width: 70%;
-    font-size: 1.875em;
+    width: 80%;
+    font-size: 2.25em;
     margin: 50px 30px 10px 60px;
     line-height: 1.25em;
   }
@@ -940,14 +963,22 @@ address {
 
 /*****FAQ PAGE*****/
   .faq-content {
-    flex-basis: 35%;
+    flex-basis: 40%;
     margin-top: 1em;
   }
 
+  .faq .content-wrapper {
+    padding:40px 0 40px 40px;
+  }
+
   .faq .content-wrapper h2 {
-    width: 85%;
+    width: 95%;
     font-size: 2.25em;
     }
+
+  .faq-content h4 {
+    font-size: 0.875em;
+  }
 }
 
 @media only screen and (min-width:1200px) {
@@ -1003,6 +1034,20 @@ address {
 
   aside .form {
     margin-top: 0;
+  }
+
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   .form-description h3 {
@@ -1223,18 +1268,22 @@ address {
 
 /*****FAQ PAGE HERE*****/
   .faq .content-wrapper h2 {
-    width: 80%;
+    width: 85%;
     font-size: 3em;
   }
 
   .faq-content {
-    flex-basis: 35%;
+    flex-basis: 38%;
     margin-top: 1em;
-    margin-left: 10%;
+    margin-left: 0%;
     width: 30%;
   }
 
-  .faq-content h4,
+  .faq-content h4 {
+    font-size: 1.125em;
+    width:90%;
+  }
+
   .faq-content p {
     font-size: 1.125em;
     width:90%;
