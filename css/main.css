@@ -171,7 +171,7 @@ header nav {
 }
 
 header nav ul {
-  width: 40%;
+  width: 45%;
   justify-content: space-between;
   text-transform: uppercase;
   flex-flow: row;
@@ -226,6 +226,7 @@ main .hero-area {
 }
 
 .content-wrapper h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 2.25em;
     line-height: 1.25em;
     width: 85%;
@@ -666,8 +667,7 @@ footer .contact p {
   }
 
   header nav ul {
-    justify-content: space-between;
-    padding-left: 15%;
+    width:50%;
   }
 
   .header-divider {
@@ -877,6 +877,13 @@ footer .contact p {
     width: 30%;
   }
 
+  .copyright p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top:0;
+  }
+
 /****ABOUT PAGE*****/
   .mission-content {
     display:flex;
@@ -1011,9 +1018,8 @@ footer .contact p {
   }
 
   header nav ul {
-    justify-content: space-around;
-    margin: 30px 100px;
-    padding-left: 30%;
+    width:40%;
+    padding-left: 6em;
   }
 
   header nav ul li {
@@ -1366,3 +1372,4 @@ footer .contact p {
   h3 {
     page-break-after: avoid;
   }
+}
